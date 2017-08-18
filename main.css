@@ -1,0 +1,100 @@
+body {
+    text-align: center;
+}
+.container {
+    padding: 20px 0;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+#goal {
+    font-size: 20px;
+    color: green;
+    margin-bottom: 20px;
+    padding: 0 10px 20px 10px;
+    min-height: 50px;
+    border-bottom: 1px #ddd solid;
+}
+#bar {
+    width: 40px;
+    height: 300px;
+    margin: 0 auto 30px;
+    position: relative;
+    background: #eeeeee;
+    background: -moz-linear-gradient(left, #eeeeee 0%, #cccccc 100%);
+    background: -webkit-linear-gradient(left, #eeeeee 0%,#cccccc 100%);
+    background: linear-gradient(to right, #eeeeee 0%,#cccccc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=1 );
+}
+.contacts,
+.deals {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-top: 2px #8eb92a solid;
+    background: #bfd255;
+    background: -moz-linear-gradient(left, #bfd255 0%, #8eb92a 53%, #72aa00 69%, #9ecb2d 100%);
+    background: -webkit-linear-gradient(left, #bfd255 0%,#8eb92a 53%,#72aa00 69%,#9ecb2d 100%);
+    background: linear-gradient(to right, #bfd255 0%,#8eb92a 53%,#72aa00 69%,#9ecb2d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=1 );
+}
+.deals {
+    background: #fceabb;
+    border-top: 2px #f8b500 solid;
+    background: -moz-linear-gradient(left, #fceabb 0%, #fccd4d 55%, #f8b500 68%, #f8b500 70%, #fbdf93 100%);
+    background: -webkit-linear-gradient(left, #fceabb 0%,#fccd4d 55%,#f8b500 68%,#f8b500 70%,#fbdf93 100%);
+    background: linear-gradient(to right, #fceabb 0%,#fccd4d 55%,#f8b500 68%,#f8b500 70%,#fbdf93 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=1 );
+    height: 0;
+}
+#contact,
+#deal {
+    display: block;
+    margin: 0 auto 15px;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    background: #fff;
+    border: 1px #ddd solid;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#contact:hover,
+#deal:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+#contact:hover {
+    background: green;
+    border-color: green;
+    color: #fff;
+}
+#deal:hover {
+    background: gold;
+    border-color: gold;
+    color: black;
+}
+#hint {
+    margin-top: 22px;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.4em;
+    display: inline-block;
+    background: rgba(255,255,255,0.8);
+    padding: 5px 10px;
+}
+.frog {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    background: url('./frog.jpg') bottom center no-repeat;
+    background-size: 90% auto;
+    z-index: -1;
+}
+.frog.active {
+    display: block;
+}
