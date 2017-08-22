@@ -5,17 +5,26 @@
 	<title>The recruiting game</title>
 </head>
 <body>
-<div class="container">
-	<div id="goal">You're almost there!</div>
-	<div id="bar">
-		<div class="contacts"></div>
-		<div class="deals"></div>
-	</div>
-	<span id="contact">New contact!</span>
-	<span id="deal">New deal!</span>
-	<div id="hint"></div>
-	<div class="frog active"></div>
-</div>
+	<ul class="tab-nav">
+		<li class="tab-nav-pill active" data-target="game">Game</li>
+		<li class="tab-nav-pill" data-target="vocabulary">Vocabulary</li>
+	</ul>
+	<div class="tabs">
+		<div class="container active" id="game">
+			<div id="goal">You're almost there!</div>
+			<div id="bar">
+				<div class="contacts"></div>
+				<div class="deals"></div>
+			</div>
+			<span id="contact">New contact!</span>
+			<span id="deal">New deal!</span>
+			<div id="hint"></div>
+			<div class="frog active"></div>
+		</div>
+		<div class="container" id="vocabulary">
+			<input type="text" class="vocabulary-search" />
+			<ul class="search-results" id="search-results"></ul>
+		</div>
 
 <link href="./main.css" rel="stylesheet">
 <script type="text/javascript" src="script.js"></script>
